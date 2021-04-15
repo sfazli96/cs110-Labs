@@ -5,18 +5,20 @@
     <title>Tic Tac Toe Game</title>
     
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
   </head>
   <body>
+
     <h1>Tic Tac Toe</h1>
-    <div class='scores'>
-      Scores: X:  O: 
-    </div>
+    <h2>Scores: <span class="display_score"></span></h2>
     <h2>Its your turn, <span class="display_player"></span>.</h2>
+
     <div class="game_board">
       <div class='row'>
-        <div class="one"><span class="xo"></span></div>
+        <div class="one" onclick="handleCellClick(this)">
+          <span class="xo"></span>
+        </div>
         <div class="two"><span class="xo"></span></div>
+          
         <div class="three"><span class="xo"></span></div>
       </div>
       <div class='row'>
@@ -28,11 +30,16 @@
         <div class="seven"><span class="xo"></span></div>
         <div class="eight"><span class="xo"></span></div>
         <div class="nine"><span class="xo"></span></div>
-      </div> 
+      </div>
     </div>
 
     <button class="new_game">New Game</button>
-    <button class="reset">Reset</button>
+    <button class="reset" onclick="resetGame()">
+      Reset
+    </button>
+
+    <script src="main.js"></script>
+
   </body>
 
 

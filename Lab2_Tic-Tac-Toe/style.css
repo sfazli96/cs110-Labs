@@ -10,6 +10,10 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  text-align: center;
+}
+
 .whose_turn {
   margin: 10px auto;
   margin-bottom: 20px;
@@ -30,7 +34,7 @@ h1 {
   margin: 20px auto;
 }
 
-.new_game:hover, .reset {
+.new_game:hover, .reset:hover {
   background-color: orange;
 }
 
@@ -45,6 +49,8 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
+
 }
 
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
@@ -64,8 +70,4 @@ h1 {
   position: absolute;
   width: 100%;
   text-align: center;
-}
-
-.scores {
-  color: black;
 }

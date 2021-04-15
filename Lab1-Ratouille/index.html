@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+   <a id="skip-nav" class="screenreader-text" href="#center-content">
+     Skip navigation or skip to content
+   </a>
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top" role="navigation" style="background-color: white;" >
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Moments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages</a>
+            </li>
+          </ul>
+
+          <ul class="icons">
+            <li class="nav-item">
+              <i class="fas fa-home"></i>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-hashtag"></i>
+            </li>
+            <li class="nav-item">
+              <i class="far fa-bell"></i>
+            </li>
+            <li class="nav-item">
+              <i class="far fa-envelope"></i>
+            </li>
+          </ul>
+
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <img src="images/twitter-logo.png" style="width: 25px; height: 23;" alt="This is our Twitter Logo">
+          </a>
+          
+          <span class="badge badge-pill" style="background-color: #1DA1F2; color: white;">Tweet</span>
+        </div>
+
+        
+     </nav>
+    </div>
+
+    <div class="wide flex" style="position: relative;">   <!-- Max Width of the whole Box -->
+      <div class="child-left">    <!-- This is content Left-->
+        <div class="child-column" style="background-color: black; height: 70%; z-index: 0;">  <!-- Box for Ratatouille Banner-->
+          <img src="./images/ratatouille-banner.png" alt="This is our Ratatouille Banner"
+                style="object-fit: fill;
+                       object-position: left;
+                       width:70%;
+                       height: auto;
+                       border: solid 0px #CCC;
+                       margin-left: auto;
+                       margin-right: auto;
+                       display: block;
+                       position: relative;
+                       bottom: -20px;
+                       z-index: auto;
+                       " 
+          /> 
+          <div class="child-column" style="background-color: white; z-index: auto; position: absolute; top: 84px;" > <!--- Box created for Ratatouille image and white background-->
+            <img src="./images/ratatouille.jpg" alt="This is our Ratatouille Picture"
+                  style="object-fit: fill;
+                         object-position: left;
+                         width:80px;
+                         height: 80px;
+                         border: solid 2px white;
+                         border-radius: 50%;
+                         position: relative;
+                         top: -19px;
+                         right: -15px;
+                         z-index: 1;" 
+
+            />   <!-- Image presented right here -->
+            <div class="child-text" style="z-index: 1; position: relative; top: -64px; right: -110px;">  <!-- Text For Remy in a box -->
+              <b><u>Remy</u></b>
+            </div>
+            <div class="child-text2" style="z-index: 1; position: relative; top: -61px; right: -110px; color: gray;"> <!-- Text For Remy in a box -->
+              @remy 
+            </div>
+        </div>
+          
+        </div>
+        <div class="child-column" style="background-color: white; height: 35%;"> <!-- Box Created for Texts -->
+            <div class="child-text2" style="z-index: 1; position: relative; top: 10px; right: -10px; color: gray;">
+              Tweets
+            </div>
+            <div class="child-text3" style="z-index: 1; position: relative; top: -10px; right: -88px; color: gray;">
+              Following
+            </div>
+            <div class="child-text4" style="z-index: 1; position: relative; top: -30px; right: -190px; color: gray;">
+              Followers
+            </div>
+            <div class="child-value" style="z-index: 1; position: relative; top: -23px; right: -10px; color: #1DA1F2">
+              7000
+            </div>
+            <div class="child-value" style="z-index: 1; position: relative; top: -44px; right: -90px; color: #1DA1F2">
+              125
+            </div>
+            <div class="child-value" style="z-index: 1; position: relative; top: -64px; right: -190px; color: #1DA1F2;">
+              825
+            </div>
+        </div>
+      </div>
+      
+      <!-- This is for Content Center -->
+      <div class="child-middle" id="center-content"> 
+
+        <div class="center-tweet">
+          <div>
+              <img src="images/ratatouille.jpg" class="rounded-circle" alt="This is our ratatouille Picture">
+            <div>
+                <span style="font-weight: bold;">Remy</span> <span style="color: grey;">@remy Nov 19</span>
+              <p>I'm taking this class called CS 110 and the TAs are all so <span style="font-weight: bold;">cool</span>!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-tweet">
+          <div>
+              <img src="images/ratatouille.jpg" class="rounded-circle" alt="This is our ratatouille Picture">
+            <div>
+                <span style="font-weight: bold;">Remy</span> <span style="color: grey;">@remy Nov 19</span>
+              <p>It's 2007. You just got home from elementary school. Your mom has pizza bagels in the oven. Ratatouille is in theaters. Life is good</p>
+            </div>
+          </div>
+        </div>        
+
+        <div class="center-tweet">
+          <div>
+              <img src="images/ratatouille.jpg" class="rounded-circle" alt="This is our ratatouille Picture">
+            <div>
+                <span style="font-weight: bold;">Remy</span> <span style="color: grey;">@remy Nov 19</span>
+              <p>Let's make some pasta!</p>
+            </div>
+          </div>
+        </div>        
+
+        <div class="center-tweet">
+          <div>
+              <img src="images/ratatouille.jpg" class="rounded-circle" alt="This is our ratatouille Picture">
+            <div>
+                <span style="font-weight: bold;">Remy</span> <span style="color: grey;">@remy Nov 19</span>
+              <p>Let's make some pasta!</p>
+            </div>
+          </div>
+        </div>        
+
+        <div class="center-tweet">
+          <div>
+              <img src="images/ratatouille.jpg" class="rounded-circle" alt="This is our ratatouille Picture">
+            <div>
+                <span style="font-weight: bold;">Remy</span> <span style="color: grey;">@remy Nov 19</span>
+              <p>Let's make some pasta!</p>
+            </div>
+          </div>
+        </div>        
+
+      </div>
+      
+<!-- This is for Content Right -->
+      <div class="child-right" style="z-index: 1; position: relative;"> 
+        <div class="child-column2" style="background-color: white; z-index: auto; position: absolute; top: 0px;">
+        
+        <div class="child-follow-text" style="z-index: 1; position: relative; top: 14px; right: -5px;">
+          <b>Who to</b>
+        </div>
+        <div class="child-follow-text" style="z-index: 1; position: relative; top: -7px; right: -62px;">
+          <b>Follow</b>
+        </div>
+
+        <div class="whoToFollow">
+          <img src="./images/linguini.png" alt="This is our linguini Picture"
+            style="object-fit: fill;
+            object-position: left;
+            width:18%;
+            height: auto;
+            border: solid 0px #CCC;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            position: absolute;
+            bottom: 13px;
+            z-index: 1;
+            left: 10px; "
+          /> 
+          <div class="child-linguini-text" style="z-index: 1; position: relative; top: -1px; right: -80px;">  <!-- Text For Linguini in a box -->
+            <b>Linguini</b>
+          </div>
+          <div class="child-linguini-text2" style="z-index: 1; position: relative; top: -22px; right: -150px; color: gray;">  <!-- Text For Linguini in a box -->
+            <b>@linguini</b>
+          </div>
+          <div class="button" style="z-index: 1; position: relative; right: -80px; top: -10px;">
+            <button type="Follow" style="border-radius: .75em; color: #1DA1F2; border-color: #1DA1F2;">Follow</button>
+          </div>
+        </div>
+      </div>
+      <div class="child-column3" style="background-color: white; z-index: auto; position: absolute; top: 118px;"> 
+
+        <img src="./images/ratatouille.jpg" alt="This is our ratatouille Picture"
+          style="object-fit: fill;
+          object-position: left;
+          width:50px;
+          height: 50px;
+          border: solid 0px #CCC;
+          border-radius: 50%;
+          position: relative;
+          top: 30px;
+          right: -5px;
+          z-index: 1;"
+        /> 
+        <div class="child-cs110-text" style="z-index: 1; position: relative; top: -29px; right: -80px;">  <!-- Text For CS110 in a box -->
+          <b>CS 110 TA</b>
+        </div>
+        <div class="child-cs-text" style="z-index: 1; position: relative; top: -50px; right: -160px; color: gray;">  <!-- Text For @cs in a box -->
+          @cs
+        </div>
+        <div class="button" style="z-index: 1; position: relative; right: -80px; top: -40px; color: #1DA1F2">
+          <button type="Follow" style="border-radius: .75em; color: #1DA1F2; border-color: #1DA1F2;">Follow</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>

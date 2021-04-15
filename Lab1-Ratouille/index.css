@@ -1,0 +1,201 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+.wide {
+  max-width: 1190px;
+  height: 600px;
+  flex-direction: row;
+ /* justify-content: space-around; */
+  margin: 56px auto;
+  right: 100px;
+  width: 2000px;
+  /*flex-flow: row wrap;*/
+  justify-content: center;
+}
+
+
+.child-column {
+  width: 290px;
+  height: 65px;
+} 
+
+.child-column2 {
+  width: 260px;
+  height: 115px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.child-column3 {
+  width: 260px;
+  height: 105px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.child-left{
+  width: 300px;
+  height: 200px;
+  flex-direction: column;
+} 
+
+.child-middle {
+  width: 600px;
+  height: 350px;
+  object-fit: fill;
+} 
+
+.center-tweet {
+  background-color: white;
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 51px;
+}
+
+.child-right {
+  width: 270px;
+  height: 225px;
+  background-color: white;
+  flex-direction: column;
+  margin-left: 10px;
+} 
+
+.child-text {
+  width: 45px;
+  height: 18px;
+} 
+
+.child-text2 {
+  width: 54px;
+  height: 21px;
+} 
+
+.child-text3 {
+  width: 69px;
+  height: 21px;
+} 
+
+.child-text4 {
+  width: 69px;
+  height: 21px;
+} 
+
+.child-value {
+  width: 40px;
+  height: 21px;
+}
+
+.child-follow-text {
+  width: 58px;
+  height: 21px;
+}
+.whoToFollow {
+  border-bottom: 1px solid #e6ecf0 !important;
+}
+.child-linguini-text {
+  width: 70px;
+  height: 21px; 
+}
+
+.child-linguini-text2 {
+  width: 73px;
+  height: 21px; 
+}
+
+.button {
+  width: 70px;
+  height: 29px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.child-cs110-text {
+  width: 80px;
+  height: 21px; 
+}
+
+.child-cs-text {
+  width: 35px;
+  height: 21px; 
+}
+
+
+.flex {
+  display: flex;
+}
+
+.navbar {
+  font-family: "Helvetica Neue";  
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 46px;
+  z-index: 100;
+}
+
+/*.fa-home, .fa-hashtag, .fa-bell, .fa-home, .fa-envelope {
+  display: none;
+}*/
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  }
+
+.nav-link:hover{
+  border-bottom-color: #1DA1F2;
+  border-bottom-style: solid;
+  color: #1DA1F2 !important;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin: 5px;
+
+}
+
+.icons{
+  display: none;
+}
+
+.screenreader-text {
+  display: none;
+}
+
+@media only screen and (max-width:910px) {
+  /* For tablets: */
+  .wide {
+    width: 80%;
+    padding: 0;
+  }
+
+  .child-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .child-right{
+    display: none;
+  }
+  a.nav-link{ display: none;}
+
+  .navbar-nav{
+    display: none;
+  }
+
+  .icons{
+    display: inline;
+  }
+
+  a.fa-home, a.fa-hashtag, a.fa-bell, a.fa-home, a.fa-envelope {
+    display: inline !important;
+  } 
+}
