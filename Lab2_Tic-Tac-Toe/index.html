@@ -14,33 +14,46 @@
 
     <div class="game_board">
       <div class='row'>
-        <div class="one" onclick="handleCellClick(this)">
+        <div class="cell" id="1" onclick="handleCellClick(this.id)">
           <span class="xo"></span>
         </div>
-        <div class="two"><span class="xo"></span></div>
-          
-        <div class="three"><span class="xo"></span></div>
+        <div class="cell" id="4" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
+        <div class="cell" id="7" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
       </div>
+
       <div class='row'>
-        <div class="four"><span class="xo"></span></div>
-        <div class="five"><span class="xo"></span></div>
-        <div class="six"><span class="xo"></span></div>
+        <div class="cell" id="2" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
+        <div class="cell" id="5" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
+        <div class="cell" id="8" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
       </div>
+
       <div class='row'>
-        <div class="seven"><span class="xo"></span></div>
-        <div class="eight"><span class="xo"></span></div>
-        <div class="nine"><span class="xo"></span></div>
+        <div class="cell" id="3" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
+        <div class="cell" id="6" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
+        <div class="cell" id="9" onclick="handleCellClick(this.id)">
+          <span class="xo"></span>
+        </div>
       </div>
     </div>
 
-    <button class="new_game">New Game</button>
-    <button class="reset" onclick="resetGame()">
-      Reset
-    </button>
+    <button class="new_game" onclick="newGame()">New Game</button>
+    <button class="reset" onclick="resetGame()">Reset</button>
 
     <script src="main.js"></script>
 
   </body>
-
-
 </html>
