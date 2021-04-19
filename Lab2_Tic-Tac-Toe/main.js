@@ -26,7 +26,6 @@ function handleCellClick(clickedCellEvent) {
             
             if(wonGame(clickedCellEvent)){
                 updateWins(whoseTurn);
-                alert("Won Bitches!!!");
                 gameOver=true;
                 return;
             }
@@ -68,6 +67,8 @@ function nextTurn(){
 
 function markCell(number){
     gameBoard[number-1] = whoseTurn;
+    document.getElementById(number).getElementsByClassName("xo")[0].style.backgroundColor = "#eb3452";
+
 }
 
 function resetGame(){
@@ -90,23 +91,25 @@ function newGame(){
 }
 
 function wonGame(number){
+    //dont need to check 
+    if(moves < 5){
+        return false;
+    }
+
     if(checkHorizontal(number)){
         return true;
     }
-    if (checkVertical(number)){
+    else if(checkVertical(number)){
         return true;
     }
-    
-    if (checkDiagonal(number)){
+    else if(checkDiagonal(number)){
         return true;
+    }else{
+        return false;
     }
-    return false;
 }
 
-// This will check the horizontal rows of the board 1, 4, 7, 3, 6, 9, 2, 5, 8
 function checkHorizontal(number){
-    // let item = document.getElementById(number).getElementsByClassName("xo")[0].innerHTML;
-    // alert("in check horiz = "+item);
     number = parseInt(number);
     switch(number)
     {
