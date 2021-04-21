@@ -32,6 +32,46 @@ function handleCellClick(clickedCellEvent) {
             nextTurn();
 
         }
+        
+    }
+
+    if(gameOver != true){
+        aiMove();
+        nextTurn();
+    }
+}
+
+function markAiCell(number){
+    gameBoard[number-1] = whoseTurn;
+    document.getElementById(number).getElementsByClassName("xo")[0].style.backgroundColor = "#eb3452";
+}
+
+/*function check_turn(){
+    let player = whoseTurn;
+    if(player == playerX){
+        handleCellClick(clickedCellEvent);
+    }  
+    else {
+        aiMove();
+        nextTurn();
+    }
+} */
+
+// This keeps track of the Ai move after the player does there move.
+function aiMove(){
+    var randNum = 0;
+    randNum = Math.floor((Math.random() * 9) + 1); // random number from 1-9
+    randNum = parseInt(randNum);
+    while(!document.getElementById(randNum).getElementsByClassName("xo")[0].innerHTML.length == 0){  // When its not valid
+        randNum = Math.floor((Math.random() * 9) + 1);
+    } 
+    markAiCell(randNum); 
+    document.getElementById(randNum).getElementsByClassName("xo")[0].innerHTML = whoseTurn;
+
+    if(wonGame(randNum)){
+        updateWins(whoseTurn);
+        gameOver=true;
+        return;
     }
 }
 
@@ -68,7 +108,6 @@ function nextTurn(){
 function markCell(number){
     gameBoard[number-1] = whoseTurn;
     document.getElementById(number).getElementsByClassName("xo")[0].style.backgroundColor = "#eb3452";
-
 }
 
 function resetGame(){
@@ -89,6 +128,7 @@ function newGame(){
     document.getElementsByClassName("display_score")[0].innerHTML = "X="+xWins+"\tO="+oWins;
     document.getElementsByClassName("display_player")[0].innerHTML = whoseTurn;
 }
+
 
 function wonGame(number){
     //dont need to check 
